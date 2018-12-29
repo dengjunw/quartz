@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sd?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+quartz:
+  enabled: true
+  instanceName: sd
+  executor.enabled: true
+  datasource:
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sd?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    user: root
+    password: root
